@@ -6,11 +6,9 @@ class Rectangle{
         this._width = width;
         this._height = height;
     }
-	
     get width(){
         return this._width;
     }
-	
     get height(){
         return this._height;
     }
@@ -19,14 +17,13 @@ class Rectangle{
     }
 }
 
-class Square extends Rectangle {
-    constructor(side) {
-        // Call the constructor of the parent class (Rectangle)
-        super(side, side);
+class Square extends Rectangle{
+    constructor(width, height){
+        super(width, height);
     }
 
-    getPerimeter() {
-        return 4 * this.width;
+    getPerimeter(){
+        return 2*(this.width+this.height);
     }
 }
 
