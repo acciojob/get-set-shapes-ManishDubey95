@@ -17,13 +17,14 @@ class Rectangle{
     }
 }
 
-class Square extends Rectangle{
-    constructor(width, height){
-        super(width, height);
+class Square extends Rectangle {
+    constructor(side) {
+        // Call the constructor of the parent class (Rectangle)
+        super(side, side);
     }
 
-    getPerimeter(){
-        return 2*(this.width+this.height);
+    getPerimeter() {
+        return 4 * this.width;
     }
 }
 
